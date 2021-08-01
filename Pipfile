@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyaudio = "==0.2.11"
+speechrecognition = "==3.8.1"
+gtts = "==2.2.3"
+playsound = "==1.3.0"
+selenium = "==3.141.0"
+webdriver-manager = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
