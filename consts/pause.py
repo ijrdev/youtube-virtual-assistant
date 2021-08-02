@@ -1,7 +1,2 @@
-ACTION_PAUSE: tuple = (
-    'pause',
-    'voltar da pausa',
-    'pausar a música'
-)
-
+ACTION_PAUSE: str = 'pause'
 PAUSE: int = 3

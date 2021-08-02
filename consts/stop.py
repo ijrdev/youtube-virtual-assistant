@@ -1,7 +1,2 @@
-ACTION_STOP: tuple = (
-    'stop',
-    'parar de tocar',
-    'parar a música'
-)
-
+ACTION_STOP: str = 'stop'
 STOP: int = 4

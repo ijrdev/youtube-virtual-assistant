@@ -1,8 +1,2 @@
-ACTION_PLAY: tuple = (
-    'play',
-    'voltar a tocar',
-    'tirar da pausa',
-    'sair da pausa'
-)
-
+ACTION_PLAY: str = 'play'
 PLAY: int = 2
