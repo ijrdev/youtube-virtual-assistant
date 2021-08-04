@@ -1,2 +1,2 @@
-ACTION_PLAY: str = 'play'
-PLAY: int = 2
+ACTION_PLAY: str = 'tocar a música'
+PLAY: int = 3

@@ -1,2 +1,2 @@
-ACTION_STOP: str = 'stop'
+ACTION_STOP: str = 'parar a música'
 STOP: int = 4

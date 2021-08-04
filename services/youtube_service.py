@@ -45,7 +45,7 @@ class YoutubeService():
             if action:
                 if action == START:
                     cls.__start_video(term)
-                elif action == PLAY or action == PAUSE:
+                elif action == PAUSE or action == PLAY:
                     cls.__play_pause_video()
                 elif action == STOP:
                     cls.__stop_video()

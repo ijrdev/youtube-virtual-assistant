@@ -1,2 +1,2 @@
-ACTION_PAUSE: str = 'pause'
-PAUSE: int = 3
+ACTION_PAUSE: str = 'pausar a música'
+PAUSE: int = 2

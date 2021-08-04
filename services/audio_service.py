@@ -58,19 +58,19 @@ class AudioService():
         playsound(f'{cls.__cwd_audios}/{type}.mp3')
         
     @classmethod
-    def __get_action(cls, text: str):
-        action_consts: tuple[dict] = (
+    def __get_action(cls, text: str) -> tuple:
+        action_consts: tuple[dict[str, int]] = (
             {
                 "name": ACTION_START,
                 "value": START
             }, 
             {
-                "name": ACTION_PLAY,
-                "value": PLAY
-            }, 
-            {
                 "name": ACTION_PAUSE,
                 "value": PAUSE
+            },
+            {
+                "name": ACTION_PLAY,
+                "value": PLAY
             }, 
             {
                 "name": ACTION_STOP,
@@ -85,6 +85,10 @@ class AudioService():
         for action in action_consts:
             if action['name'] in text_lower:
                 choosen_action = action['value']
-                listen_to = text_lower.replace(action['name'], '')
+                
+                if action['value'] == START:
+                    listen_to = text_lower.replace(action['name'], '')
+                else:
+                    listen_to = text_lower
                     
-        return choosen_action, listen_to
+        return (choosen_action, listen_to)
