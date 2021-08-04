@@ -1,2 +1,2 @@
-ACTION_START: str = 'comece a tocar'
+ACTION_START: str = 'começar a tocar'
 START: int = 1
